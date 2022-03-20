@@ -5,29 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".register">
     <EditText
         android:id="@+id/userId_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入账号" />
+        android:hint="请输入账号邮箱" />
+    <EditText
+        android:id="@+id/userName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入昵称" />
     <EditText
         android:id="@+id/password_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入密码" />
     <Button
-        android:id="@+id/login_button"
-        android:onClick="login_onClick"
-        android:text="登录"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
         android:id="@+id/register_button"
-        android:onClick="register_onClick"
-        android:text="没有账号，进行注册"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:onClick="register_click"
+        android:text="注册" />
 
 </LinearLayout>
